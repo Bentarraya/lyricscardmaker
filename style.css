@@ -7,70 +7,25 @@
 
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 
-/* Modifichiamo il layout in base alle dimensioni dello schermo */
-@media (max-width: 768px) {
-  .main-div {
-    flex-direction: column;
-  }
-
-  .spotifytext {
-    text-align: center;
-  }
-
-  .parent {
-    margin-top: 6%;
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
   }
 }
 
-@media (max-width: 320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-  .main-div {
-    flex-direction: column;
+@media (max-width: 900px) {
+  /* Gaya CSS untuk layar dengan lebar maksimal 600px */
+  .rect-default {
+      width: 100%;
   }
-  .parent {
-    margin-top: 6%;
+
+  #text-name,
+  #text-author,
+  #text-lyric {
+      width: 100%;
   }
 }
 
-@media (max-width: 481px) {
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  .main-div {
-    flex-direction: column;
-  }
-  .parent {
-    margin-top: 6%;
-  }
-}
-
-@media (max-width: 641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .main-div {
-    flex-direction: column;
-  }
-  .parent {
-    margin-top: 6%;
-  }
-}
-
-@media (max-width: 961px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .main-div {
-    flex-direction: column;
-  }
-  .parent {
-    margin-top: 6%;
-  }
-}
-
-@media (max-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-  .main-div {
-    flex-direction: column;
-  }
-  .parent {
-    margin-top: 6%;
-  }
-}
 
 body {
   overflow-x: hidden;
